@@ -1,14 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold text-blue-400">
-        Hello world!
-      </h1>
+      <nav>
+        <div className="flex space-x-7 p-4 items-center">
+          {/* logo and bold text */}
+          <div className="flex space-x-2 items-center">
+            <div className="h-full w-8">
+              <img src="../assets/spiro.svg"></img>
+            </div>
+            <div>
+              <span className="font-bold">React Navigation</span>
+            </div>
+          </div>
+          {/* extended links */}
+          <div className="space-x-6 font-medium flex">
+            <a>Docs</a>
+            <a>Blog</a>
+            <a>Help</a>
+            <div>
+              <a>7.x</a>
+            </div>
+          </div>
+        </div>
+      </nav>
     </>
   )
 }
